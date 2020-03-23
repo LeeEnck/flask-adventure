@@ -5,12 +5,12 @@ with open("README.md", "r") as f:
 
 
 setuptools.setup(
-    name="sheol"
+    name="flask-adventure"
     version="0.0.1",
     author="Lee Enck",
-    author_email="your@email.com",
-    url="https://github.com/yourusername/yourproject",
-    description="what does yourproject do?",
+    author_email="eaglesfootball@gmail.com",
+    url="https://github.com/LeeEnck/flask-adventure",
+    description="web application configured to be deployed to Heroku",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
