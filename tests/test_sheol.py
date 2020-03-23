@@ -1,4 +1,9 @@
-import flask-adventure
+from sheol-adventure import create_app
 
-def test_import():
-    assert flask-adventure
+def test_config():
+    assert not create_app().testing
+    assert create_app({'TESTING': True}).testing
+
+def test_index(client):
+    response = client.get('/')
+    assert response.data == b'sheol-adventure'

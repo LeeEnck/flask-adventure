@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 
 setuptools.setup(
-    name="flask-adventure"
+    name="sheol-adventure"
     version="0.0.1",
     author="Lee Enck",
     author_email="eaglesfootball@gmail.com",
