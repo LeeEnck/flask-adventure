@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Welcome to Sheol!{% endblock %}</h1>
+<h1 class="title-card">{% block title %}Welcome to Sheol!{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-<!--add buttons here-->
+<a href="/game/portal" class="button">New Game</a>
+{% if g.save_game == 1 %}
+<a href="{{ g.current_scene }}" class="button">Continue</a>
+{% endif %}
 {% endblock %}
