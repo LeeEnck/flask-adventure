@@ -8,10 +8,11 @@
   {% block content %}
   <h3> My current environment is. </h3>
   <p>{{ stage_description }}</p>
-  /*
-  <h3> </h3>
-  <p> </p>
-  <form method="post">
-    <input type="text" name="">
-    */
+
+  <h3>I am compelled to.</h3>
+  <p>{{ stage_protocol }}</p>
+  <form method='post'>
+    <input type="text" name="action" required>
+    <input type="submit" value="Take Action">
+  </form>
   {% endblock %}

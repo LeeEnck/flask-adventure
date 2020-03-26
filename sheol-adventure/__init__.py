@@ -30,4 +30,7 @@ def create_app(test_config=None):
     from . import welcome
     app.register_blueprint(welcome.bp)
 
+    from . import stage 
+    app.register_blueprint(stage.bp)
+
     return app
