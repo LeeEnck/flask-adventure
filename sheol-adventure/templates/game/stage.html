@@ -1,10 +1,17 @@
 {% extends 'base.html' %}
 
-<title>{% block title %}{{ titel }}{% endblock %}</title>
+<title>{% block title %}{{ title }}{% endblock %}</title>
 {% block header %}
-<h1>You are in {{ title }}<h1>
+<h1>You are currently inside {{ title }}<h1>
   {% endblock %}
 
   {% block content %}
-  <p>{{ room_description }}</p>
+  <h3> My current environment is. </h3>
+  <p>{{ stage_description }}</p>
+  /*
+  <h3> </h3>
+  <p> </p>
+  <form method="post">
+    <input type="text" name="">
+    */
   {% endblock %}
