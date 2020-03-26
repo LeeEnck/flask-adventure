@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block content %}
-<a href="game/hell" class="button">Start New Gam</a>
+<a href="game/hell" class="button">Start New Game</a>
 {% if g.save_game == 1 %}
-<a href=""{{ g.current_scene }}" class="button">Continue</a>
+<a href="{{ g.current_scene }}" class="button">Continue</a>
 {% endif %}
 {% endblock %}
