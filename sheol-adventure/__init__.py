@@ -28,4 +28,7 @@ def create_app(test_config=None):
     def hello():
         return 'sheol-adventure'
 
+    from . import welcome
+    app.register_blueprint(welcome.bp)
+
     return app
