@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block header %}
+
   <h1 class="title-card">{% block title %}Welcome to Sheol!{% endblock %}</h1>
 {% endblock %}
 
@@ -8,5 +9,10 @@
 <a href="/game/hell" class="button">Start New Game</a>
 {% if g.save_game == 1 %}
 <a href="game/{{ g.current_scene }}" class="button">Continue</a>
+
+<h1 class="title-card">{% block title %}Welcome to Sheol!{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
 {% endif %}
 {% endblock %}

@@ -32,5 +32,5 @@ def create_app(test_config=None):
 
     from . import stage 
     app.register_blueprint(stage.bp)
-
+    
     return app
